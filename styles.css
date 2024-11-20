@@ -1,0 +1,182 @@
+* {
+    font-family: "Cairo", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+	"slnt" 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #749BC2;
+	direction: rtl;
+}
+
+.game {
+    background-color: #4682A9;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10% 5%;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.game .game-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.game button {
+    border: none;
+    border-radius: 200px;
+    background: none;
+    cursor: pointer;
+}
+
+.game button:focus {
+    border: none;
+}
+
+.game img {
+    border-radius: 200px;
+    width: 150px;
+    height: 150px;
+    transition: .5s;
+}
+
+.game img:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.buttonHover {
+    font-size: 30px;
+    color: #F6F4EB;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gameplay {
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    padding: 5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
+    background-color: #4682A9;
+    color: #F6F4EB;
+    transition: 1s;
+}
+
+.gameplay span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameplay img {
+    border-radius: 200px;
+}
+
+.points {
+    position: fixed;
+    top: -10%;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+    width: 10%;
+    font-size: 20px;
+    color: #F6F4EB;
+    background-color: #4682A9;
+    text-align: center;
+    transition: 1s;
+}
+
+.restart {
+    position: fixed;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 50%;
+    background-color: #000000;
+    color: #F6F4EB;
+    cursor: pointer;
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    padding: 1%;
+    transition: 1s;
+}
+
+.account {
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: #4682A9;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.account .title {
+    font-size: 30px;
+    color: #F6F4EB;
+}
+
+.account .text {
+    margin-top: 20px;
+}
+
+.account input,
+.account button {
+    display: block;
+    text-align: center;
+    color: #F6F4EB;
+    background-color: #749BC2;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    border: none;
+    transition: .5s;
+}
+
+.account input[type="text"]:focus,
+.account input[type="email"]:focus,
+.account input[type="password"]:focus {
+    outline: none;
+    width: 75%;
+}
+
+.account .buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.account input[type="submit"],
+.account button {
+    width: 25%;
+    cursor: pointer;
+    margin-top: 20px;
+}

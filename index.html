@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>لعبة حجر ورقة مقص</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="لعبة حجر ورقة مقص هي لعبة مشهورة يعتمد فيها اللاعب على اختياره بين ثلاثة خيارات؛ الحجر، الورقة، والمقص. اختر بشكل ذكي لتتفوق على الكمبيوتر." />
+    <meta name="author" content="23MohammedYT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91f684aec9.js" crossorigin="anonymous"></script>
+    <!-- الكلمات المفتاحية -->
+    <meta name="keywords" content="حجر ورقة مقص, لعبة حجر ورقة مقص, لعبة, ذكاء, تحدي, كمبيوتر, لعبة تفاعلية, ألعاب أونلاين, لعبة جماعية, ألعاب ممتعة">
+</head>
+    <body>
+        <div class="game">
+            <div class="game-buttons">
+                <button id="rock"><img src="rock.png" id="rock-img" /></button>
+                <button id="paper"><img src="paper.png" id="paper-img" /></button>
+                <button id="scissors"><img src="scissors.png" id="scissors-img" /></button>
+            </div>
+            <div class="buttonHover" id="buttonHover"></div>
+        </div>
+        <div class="gameplay" id="gameplay">
+            <span>
+                <img src="rock.png" class="player" id="player" />
+                <span>اللاعب</span>
+            </span>
+            <span>مقابل</span>
+            <span>
+                <img src="scissors.png" class="computer" id="computer" />
+                <span>الكمبيوتر</span>
+            </span>
+        </div>
+        <div class="points" id="score">0</div>
+        <div class="restart" id="restart">اللعب مرة أخرى</div>
+        <script src="script.js"></script>
+    </body>
+</html>
